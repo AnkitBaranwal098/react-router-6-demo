@@ -13,6 +13,9 @@ const Navbar = () => {
       <li>
         <Link to="/contact">Contact</Link>
       </li>
+      <li>
+        <Link to="/user/Ankit/11500318108">Ankit</Link>
+      </li>
     </ul>
   );
 };
