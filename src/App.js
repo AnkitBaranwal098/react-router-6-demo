@@ -1,5 +1,5 @@
 
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Home from "./Home"
 import About from "./About"
 import './App.css';
@@ -11,7 +11,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>}/>
-        <Route path='/*' element={<Page404/>}/>
+        {/* <Route path='/*' element={<Page404/>}/> */}
+
+        {/* Redirect to Home Page for every wrong url */}
+        <Route path='/*' element={<Navigate to="/"/>}></Route>
       </Routes>
     </div>
   );
