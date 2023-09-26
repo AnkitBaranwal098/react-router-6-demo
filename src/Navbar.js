@@ -16,6 +16,9 @@ const Navbar = () => {
       <li>
         <Link to="/user/Ankit/11500318108">Ankit</Link>
       </li>
+      <li>
+        <Link to="/filter">Filter</Link>
+      </li>
     </ul>
   );
 };

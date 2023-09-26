@@ -4,6 +4,7 @@ import Home from "./Home"
 import About from "./About"
 import './App.css';
 import Page404 from './Page404';
+import Filter from "./Filter"
 import User from './User';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>}/>
         <Route path='/user/:name/:roll' element={<User/>}/>
+        <Route path='/filter?' element={<Filter/>}/>
         {/* <Route path='/*' element={<Page404/>}/> */}
 
         {/* Redirect to Home Page for every wrong url */}
