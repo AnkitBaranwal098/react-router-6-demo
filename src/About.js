@@ -9,6 +9,7 @@ const About = ()=>{
             <p>This demo is used to understand how <b>Link</b> work in React</p>
             <br></br>
             <Link to='/'>Home </Link>
+            <Link to="/user/Ankit/202313" state={{nickname: "Mikku",age: 25}}>Ankit</Link>
         </div>
     )
 }

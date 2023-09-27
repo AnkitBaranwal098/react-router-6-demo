@@ -1,8 +1,11 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 
 const User = ()=>{
 
+    const location = useLocation();
+    console.log(location)
+    
     const {name, roll} = useParams();
     console.log(name)
     return (

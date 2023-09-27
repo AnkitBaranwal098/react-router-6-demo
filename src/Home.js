@@ -1,8 +1,11 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
 
 const Home = () => {
   const navigate = useNavigate();
+
+  const location = useLocation();
+  console.log(location)
 
   const takeTo = (url) => {
     navigate(url);
