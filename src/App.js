@@ -9,16 +9,19 @@ import Contact from "./Contact";
 import Company from "./Company"
 import Channel from "./Channel"
 import Other from "./Other"
+import Protected from "./Protected";
+import Login from "./Login";
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/about" element={<Protected Component={About} />} />
         <Route path="/user/:name/:roll" element={<User />} />
-        <Route path="/filter?" element={<Filter />} />
+        <Route path="/filter?" element={<Protected Component={Filter} />} />
 
-        <Route path="/contact" element={<Contact />}>
+        <Route path="/contact" element={<Protected Component={Contact} />}>
           <Route path="company" element={<Company/>}/>
           <Route path="channel" element={<Channel/>}/>
           <Route path="other" element={<Other/>}/>
